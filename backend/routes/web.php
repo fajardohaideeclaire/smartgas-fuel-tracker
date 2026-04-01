@@ -1,7 +1,2 @@
-<?php
-
-use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\Api\FuelController;
+Route::get('/dashboard', [FuelController::class, 'index']);
